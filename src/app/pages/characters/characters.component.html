@@ -1,0 +1,17 @@
+<h1>Personajes de Rick and Morty</h1>
+<div class="characters">
+   <!-- @for (item of characters; track item.id) {
+    <p>hola</p>
+   } -->
+    <div *ngFor=" let character of characters">
+      <div class="character">
+         <!-- <h3>{{character.id}}</h3> -->
+         <h3>{{character.name}}</h3>
+         <p>Status: {{character.status}}</p>
+         <p>Specie: {{character.species}}</p>
+         <img [src]="character.image" alt="imagen de {{character.name}}">
+      </div>
+
+    </div>
+
+</div>
