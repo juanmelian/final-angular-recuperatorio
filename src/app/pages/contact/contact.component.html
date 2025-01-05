@@ -1,1 +1,11 @@
-<p>contact works!</p>
+<h1>Contact</h1>
+<form [formGroup]="contactForm">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name" formControlName="name">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" formControlName="email">
+    <label for="message">Mensaje:</label>
+    <textarea name="message" id="message" formControlName="message"></textarea>
+    <button type="submit" [disabled]="contactForm.invalid" (click)="onSubmit()">Enviar</button>
+
+</form>

@@ -19,7 +19,9 @@ export class CharactersComponent implements OnInit {
     }); 
   }
 
-  
+  trackById(index: number, item: any): number {
+    return item.id;
+  }
 
 
 }
