@@ -8,7 +8,7 @@ export class CharactersService{
 
     async getCharacters(){
 
-        const response = await fetch('http://rickandmortyapi.com/api/character');
+        const response = await fetch('http://rickandmortyapi.com/api/character',{referrerPolicy: "unsafe-url"});
 
         const data = await response.json();
 
