@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CharacterDetailComponent } from './pages/character-detail/character-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ContactComponent,
     CharactersComponent,
-    NavbarComponent
+    NavbarComponent,
+    CharacterDetailComponent
   ],
   imports: [
     BrowserModule,

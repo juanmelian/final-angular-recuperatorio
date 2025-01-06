@@ -1,7 +1,7 @@
 <h1>Personajes de Rick and Morty</h1>
 <div class="characters">
     <div *ngFor=" let character of characters; trackBy: trackById">
-      <div class="character">
+      <div class="character" [routerLink]="['/characters', character.id]">
          <h3>{{character.name}}</h3>
          <p>Status: {{character.status}}</p>
          <p>Specie: {{character.species}}</p>
